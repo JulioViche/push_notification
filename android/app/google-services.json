@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "211466041190",
+    "project_id": "mobile-development-cb3e1",
+    "storage_bucket": "mobile-development-cb3e1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211466041190:android:96971c1158bedd769b3aa7",
+        "android_client_info": {
+          "package_name": "com.example.push_notification"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNztCDq1QQ32opr_0onx0PNIrb-IS1ESg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211466041190:android:179c553f092159c99b3aa7",
+        "android_client_info": {
+          "package_name": "com.jeviche.firebase_practice"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNztCDq1QQ32opr_0onx0PNIrb-IS1ESg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
