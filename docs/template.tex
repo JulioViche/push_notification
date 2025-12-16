@@ -61,7 +61,7 @@
     \vspace*{1cm}
     
     % Logo de la carrera
-    % \includegraphics[height=3cm]{sw-logo.png}
+    \includegraphics[height=3cm]{sw-logo.png}
     
     \vspace{1.5cm}
     
@@ -84,10 +84,10 @@
     \vfill
     
     % Decoración celeste inferior
-    % \begin{tikzpicture}[remember picture, overlay]
-        % \node[anchor=south] at ([yshift=0.5cm]current page.south) 
-        % {\includegraphics[width=1.1\textwidth]{decoration.png}};
-    % \end{tikzpicture}
+    \begin{tikzpicture}[remember picture, overlay]
+        \node[anchor=south] at ([yshift=0.5cm]current page.south) 
+        {\includegraphics[width=1.1\textwidth]{decoration.png}};
+    \end{tikzpicture}
     
 \end{titlepage}
 
@@ -207,7 +207,7 @@ Además, se deben configurar los receivers dentro del tag \texttt{<application>}
 
 \begin{figure}[H]
     \centering
-    % \includegraphics[width=0.9\textwidth]{androidmanifest.png}
+    \includegraphics[width=0.9\textwidth]{androidmanifest.png}
     \caption{AndroidManifest.xml con permisos configurados}
     \label{fig:manifest}
 \end{figure}
@@ -240,7 +240,7 @@ lib/
 
 \begin{figure}[H]
     \centering
-    % \includegraphics[width=0.8\textwidth]{arquitectura.png}
+    \includegraphics[width=0.8\textwidth]{arquitectura.png}
     \caption{Arquitectura del sistema de notificaciones}
     \label{fig:arquitectura}
 \end{figure}
@@ -613,7 +613,7 @@ También muestra el token FCM (Firebase Cloud Messaging) en la parte superior.
 
 \begin{figure}[H]
     \centering
-    % \includegraphics[width=0.5\textwidth]{home_screen.png}
+    \includegraphics[width=0.5\textwidth]{home_screen.png}
     \caption{Pantalla principal de la aplicación}
     \label{fig:home}
 \end{figure}
@@ -636,7 +636,7 @@ Permite al usuario:
 
 \begin{figure}[H]
     \centering
-    % \includegraphics[width=0.5\textwidth]{schedule_screen.png}
+    \includegraphics[width=0.5\textwidth]{schedule_screen.png}
     \caption{Pantalla de programación de notificaciones}
     \label{fig:schedule}
 \end{figure}
@@ -659,7 +659,7 @@ Muestra todas las notificaciones guardadas con:
 
 \begin{figure}[H]
     \centering
-    % \includegraphics[width=0.5\textwidth]{notification_list.png}
+    \includegraphics[width=0.5\textwidth]{notification_list.png}
     \caption{Pantalla de historial de notificaciones}
     \label{fig:list}
 \end{figure}
@@ -682,7 +682,7 @@ Muestra información completa de una notificación:
 
 \begin{figure}[H]
     \centering
-    % \includegraphics[width=0.5\textwidth]{notification_detail.png}
+    \includegraphics[width=0.5\textwidth]{notification_detail.png}
     \caption{Pantalla de detalle de notificación}
     \label{fig:detail}
 \end{figure}
@@ -804,13 +804,13 @@ return MaterialApp(
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        % \includegraphics[width=\textwidth]{notification_instant.png}
+        \includegraphics[width=\textwidth]{notification_instant.png}
         \caption{Notificación instantánea}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        % \includegraphics[width=\textwidth]{notification_buttons.png}
+        \includegraphics[width=\textwidth]{notification_buttons.png}
         \caption{Notificación con botones}
     \end{subfigure}
     \caption{Notificaciones locales en la barra de notificaciones}
@@ -839,7 +839,7 @@ return MaterialApp(
 
 \begin{figure}[H]
     \centering
-    % \includegraphics[width=0.5\textwidth]{notification_scheduled.png}
+    \includegraphics[width=0.5\textwidth]{notification_scheduled.png}
     \caption{Notificación programada llegando con app cerrada}
     \label{fig:scheduled}
 \end{figure}
@@ -866,7 +866,7 @@ return MaterialApp(
 
 \begin{figure}[H]
     \centering
-    % \includegraphics[width=0.8\textwidth]{firebase_console.png}
+    \includegraphics[width=0.8\textwidth]{firebase_console.png}
     \caption{Firebase Console - Envío de notificación}
     \label{fig:firebase_console}
 \end{figure}
@@ -888,7 +888,7 @@ return MaterialApp(
 
 \begin{figure}[H]
     \centering
-    % \includegraphics[width=0.5\textwidth]{notification_background.png}
+    \includegraphics[width=0.5\textwidth]{notification_background.png}
     \caption{Notificación Firebase en modo Background}
     \label{fig:background}
 \end{figure}
@@ -910,15 +910,6 @@ return MaterialApp(
     \item Verificar que navega automáticamente a historial
     \item Verificar que la notificación está guardada
 \end{enumerate}
-
-\begin{figure}[H]
-    \centering
-    % \includegraphics[width=0.5\textwidth]{notification_terminated.png}
-    \caption{Notificación Firebase en modo Terminated}
-    \label{fig:terminated}
-\end{figure}
-
-\textit{Nota: Captura de notificación Firebase recibida con app completamente cerrada}
 
 \newpage
 
