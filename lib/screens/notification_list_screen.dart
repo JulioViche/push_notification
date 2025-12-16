@@ -176,7 +176,12 @@ class _NotificationListScreenState extends State<NotificationListScreen> {
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                   decoration: BoxDecoration(
-                    color: _getTypeColor(notification.type).withOpacity(0.2),
+                    color: Color.fromRGBO(
+                      (_getTypeColor(notification.type).red),
+                      (_getTypeColor(notification.type).green),
+                      (_getTypeColor(notification.type).blue),
+                      0.2,
+                    ),
                     borderRadius: BorderRadius.circular(4),
                   ),
                   child: Text(

@@ -121,7 +121,7 @@ class _ScheduledNotificationScreenState extends State<ScheduledNotificationScree
             Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: Colors.orange.withOpacity(0.1),
+                color: Color.fromRGBO(255, 165, 0, 0.1),
                 borderRadius: BorderRadius.circular(8),
                 border: Border.all(color: Colors.orange),
               ),

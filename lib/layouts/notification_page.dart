@@ -1,5 +1,5 @@
 import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'notification_detail_page.dart';
@@ -25,6 +25,7 @@ class _NotificationPageState extends State<NotificationPage> {
       final title = message.notification?.title ?? "N/A";
       final body = message.notification?.body ?? "N/A";
 
+      if (!mounted) return;
       showDialog(
         context: context,
         builder: (context) => AlertDialog(
@@ -55,13 +56,14 @@ class _NotificationPageState extends State<NotificationPage> {
     FirebaseMessaging.onMessageOpenedApp.listen((RemoteMessage message){
       final title=message.notification?.title ?? "N/A";
       final body=message.notification?.body ?? "N/A";
-      Navigator.push(
+        if (!mounted) return;
+        Navigator.push(
           context,
           MaterialPageRoute(
-              builder:
-                  (context)=>NotificationDetailPage(title: title, body: body)
+            builder:
+              (context)=>NotificationDetailPage(title: title, body: body)
           )
-      );
+        );
     });
 
     FirebaseMessaging.instance.getInitialMessage().then((message){
@@ -69,12 +71,13 @@ class _NotificationPageState extends State<NotificationPage> {
       if (message != null){
         final title=message.notification?.title ?? "N/A";
         final body=message.notification?.body ?? "N/A";
+        if (!mounted) return;
         Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder:
-                    (context)=>NotificationDetailPage(title: title, body: body)
-            )
+          context,
+          MaterialPageRoute(
+            builder:
+              (context)=>NotificationDetailPage(title: title, body: body)
+          )
         );
       }
     });
